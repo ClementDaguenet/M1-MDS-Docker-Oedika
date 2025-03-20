@@ -1,0 +1,36 @@
+{
+  "name": "oedika",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "compression": "^1.7.5",
+    "core-js": "^3.8.3",
+    "express": "^4.21.2",
+    "maplibre-gl": "^5.0.1",
+    "serve-static": "^1.16.2",
+    "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.0.3",
+    "vue3-transitions": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/vue": "^1.0.31",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "typescript": "^5.7.3",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
