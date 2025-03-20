@@ -60,7 +60,6 @@ export default defineComponent({
 
     const takePhoto = () => {
       if (video.value) {
-        console.log("Photo en cours de prise")
         const canvas = document.createElement("canvas");
         const canvasContext = canvas.getContext("2d");
         if (canvasContext) {
@@ -74,7 +73,6 @@ export default defineComponent({
             canvas.height
           );
           const imageData = canvas.toDataURL("image/jpeg", 0.7);
-          console.log("Photo capturée")
           uploadPhoto(imageData);
         }
       }
@@ -85,14 +83,12 @@ export default defineComponent({
         const formData = new FormData();
         formData.append("photo", convertDataURLtoBlob(imageData), "photo.jpg");
 
-        console.log("Envoi de la photo")
         const response = await fetch(`${backendUrl}/photos`, {
           method: "POST",
           body: formData,
         });
 
         if (response.ok) {
-          console.log("Photo envoyée !")
           fetchPhotos();
         } else {
           console.error(
@@ -106,12 +102,10 @@ export default defineComponent({
     };
 
     const fetchPhotos = async () => {
-      console.log("Photos en cours de récupération")
       try {
         const response = await fetch(`${backendUrl}/photos`);
         if (response.ok) {
           const photos = await response.json();
-          console.log("Photos récupérées")
           photoData.value = photos.map(
             (photo: any) => `data:image/jpeg;base64,${photo.image}`
           );
