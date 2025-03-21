@@ -143,7 +143,7 @@ nav {
 }
 
 .menu-items a.router-link-exact-active {
-  color: #b142b9;
+  color: #2a3bbc;
   font-weight: bold;
 }
 

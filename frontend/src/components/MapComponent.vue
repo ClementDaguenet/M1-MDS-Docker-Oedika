@@ -146,7 +146,7 @@ input:focus {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: rgb(177, 66, 185);
+  background-color: rgb(33, 44, 124);
   color: white;
   border: none;
   border-radius: 20px;
@@ -156,8 +156,8 @@ input:focus {
 }
 
 .btn-add-marker:hover {
-  background-color: #812688;
+  background-color: #252c89;
   transform: scale(1.05);
-  box-shadow: 0px 4px 15px rgba(177, 66, 185, 0.5);
+  box-shadow: 0px 4px 15px rgba(33, 44, 124, 0.5);
 }
 </style>

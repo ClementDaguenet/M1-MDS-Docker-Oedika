@@ -65,6 +65,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #b142b9;
+  color: #2a3bbc;
 }
 </style>

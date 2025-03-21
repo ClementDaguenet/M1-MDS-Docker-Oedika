@@ -172,7 +172,7 @@ video {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #b142b9;
+  background-color: #2a3bbc;
   color: white;
   border: none;
   border-radius: 20px;
@@ -183,9 +183,9 @@ video {
 }
 
 .btn-trans-purple:hover {
-  background-color: #812688;
+  background-color: #252c89;
   transform: scale(1.05);
-  box-shadow: 0px 4px 15px rgba(177, 66, 185, 0.5);
+  box-shadow: 0px 4px 15px rgba(33, 44, 124, 0.5);
 }
 
 .btn-trans-purple::after {
@@ -247,7 +247,7 @@ video {
 }
 
 .carousel-btn:hover {
-  background-color: #812688;
+  background-color: #252c89;
 }
 
 .carousel-btn:focus {
